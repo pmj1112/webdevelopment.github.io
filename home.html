@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="topic.png">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo_icon.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#exercises">Exercises</a></li>
+            </ul>
+            <img src="user.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-profile">
+                        <img src="user.png">
+                        <h3>Name</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="user.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="settings.png">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="index.html" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <img src="hero.png" class="body">
+    </div>
+    <div class="about">
+        <h2 id="about">About</h2>
+        <div class="container">
+            <div class="about-text">
+                <p>Geometry is concerned with the shape of individual objects, spatial relationships among various objects, and the properties of surrounding space.</p>
+            </div>
+            <img src="about.png" alt="">
+        </div>
+    </div>
+    <div class="topic-section">
+        <h2 id="topics">Featured Topics</h2>
+        <div class="container">
+            <div class="topic-list">
+                <div class="topic-item">
+                    <img src="central.png" alt="">
+                    <h3><a href="topic1.html">Chords, Arcs, and Central Angles</a></h3>
+                    <p>You will learn to derive inductively the relations among chords, arcs, central angles, and illustrate segments and sectors of circles.</p>
+                </div>
+                <div class="topic-item">
+                    <img src="inscribed.png" alt="">
+                    <h3 class="arcs"><a href="topic2.html">Arcs and Inscribed Angles</a></h3>
+                    <p>You will learn to prove theorems and solve problems related to chords, arcs, central angles, and inscribed angles of a circle.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="topic-list">
+                <div class="topic-item">
+                    <img src="tansec.png" alt="">
+                    <h3><a href="topic3.html">Tangents and Secants of a Circle</a></h3>
+                    <p>You will learn to illustrate tangents and secants of circles.</p>
+                </div>
+                <div class="topic-item">
+                    <img src="segment.png" alt="">
+                    <h3><a href="topic4.html">Tangent and Secant Segments</a></h3>
+                    <p>You will learn to solve problems involving tangents and secants of circles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="topic-list">
+                <div class="topic-item">
+                    <img src="coor.png" alt="">
+                    <h3><a href="topic5.html">The Distance Formula, The Midpoint, and The Coordinate Proof</a></h3>
+                    <p>You will learn to graph on the coodinate plane.</p>
+                </div>
+                <div class="topic-item">
+                    <img src="equation.png" alt="">
+                    <h3><a href="topic6.html">The Equation of a Circle</a></h3>
+                    <p>You will learn to determine the center and radius of a circle given its equations and vice versa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exercise-section">
+        <h2 id="exercises">Exercises</h2>
+        <div class="container">
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="exercise1.html">Exercise 1</a></h3>
+                </div>
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="exercise2.html">Exercise 2</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="exercise3.html">Exercise 3</a></h3>
+                </div>
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="exercise4.html">Exercise 4</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="exercise5.html">Exercise 5</a></h3>
+                </div>
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="exercise6.html">Exercise 6</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <footer class="foot">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#exercises">Exercises</a></li>
+                </ul>
+              <p>&copy; 2023 PMJ, Inc</p>
+            </footer>
+          </div>
+    </div>
+
+    
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcs and Inscribed Angles</title>
+    <link rel="stylesheet" href="topics_style.css">
+    <link rel="icon" href="topic.png">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="nav">
+                <img src="logo_icon.png" class="logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="topic1.html">Topics</a></li>
+                    <li><a href="exercise1.html">Exercises</a></li>
+                </ul>
+                
+                <img src="user.png" class="user" onclick="toggle()">
+                <div class="menu-wrap" id="sub">
+                    <div class="sub-menu">
+                        <div class="profile">
+                            <img src="user.png">
+                            <h3>PMJ</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="menu-link">
+                            <img src="user.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="menu-link">
+                            <img src="settings.png">
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="menu-link">
+                            <img src="logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <div class="nav2">
+        <nav class="navi">
+            <ul>
+                <li><a href="topic1.html">Chords, Arcs, and Central Angles</a></li>
+                <li><a href="topic2.html">Arcs and Inscribed Angles</a></li>
+                <li><a href="topic3.html">Tangents and Secants of a Circle</a></li>
+                <li><a href="topic4.html">Tangent and Secant Segments</a></li>
+                <li><a href="topic5.html">The Distance Formula</a></li>
+                <li><a href="topic6.html">The Equation of a Circle</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="topic_title">
+        <div class="container">
+            <div class="topichead">
+                <h1 class="button">Arcs and Inscribed Angles</h1>
+            </div>
+        </div>
+    </div>
+    <div class="nine">
+        <h2>Inscribed Angles and Intercepted Arcs</h2>
+        <div class="container">
+            <div class="nine_text">
+                <p>An inscribed angle is an angle whose vertex is on a circle and whose sides contain chords of the circle. The arc that lies in the interior of an inscribed angle and has endpoints on the angle is called of the angle.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="ten">
+        <h2>Theorems on Inscribed Angles</h2>
+        <div class="container">
+            <div class="ten_text">
+                <p>
+                    <ul>
+                        <li>If an angle is inscribed in a circle, then the measure of the angle equals 
+                            one-half the measure of its intercepted arc (or the measure of the 
+                            intercepted arc is twice the measure of the inscribed angle).</li>
+                        <li>If two inscribed angles of a circle (or congruent circles) intercept congruent 
+                            arcs or the same arc, then the angles are congruent.</li>
+                        <li>If an inscribed angle of a circle intercepts a semicircle, then the angle is a 
+                            right angle.</li>
+                        <li>If a quadrilateral is inscribed in a circle, then its opposite angles are 
+                            supplementary.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <p class="p1">
+        <button><a href="home.html">Home</a></button>
+        <button><a href="topic1.html">Back</a></button>
+        <button><a href="topic3.html">Next</a></button>
+    </p>
+
+    <script>
+        let sub = document.getElementById("sub");
+        function toggle() {
+            sub.classList.toggle("open-menu");
+        }
+    </script>
+    
+    <script>
+        const button = document.querySelector(".button");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            button.classList.add("animate");
+
+            setTimeout(() => {
+                button.classList.remove("animate");
+            },600)
+        });
+    </script>
+    
+</body>
+</html>

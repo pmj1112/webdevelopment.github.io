@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <link rel="icon" href="topic.png">
+    <link rel="stylesheet" href="exercise_style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="nav">
+                <img src="logo_icon.png" class="logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="topic1.html">Topics</a></li>
+                    <li><a href="exercise1.html">Exercises</a></li>
+                </ul>
+                
+                <img src="user.png" class="user" onclick="toggle()">
+                <div class="menu-wrap" id="sub">
+                    <div class="sub-menu">
+                        <div class="profile">
+                            <img src="user.png">
+                            <h3>PMJ</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="menu-link">
+                            <img src="user.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="menu-link">
+                            <img src="settings.png">
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="menu-link">
+                            <img src="logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <div class="nav2">
+        <nav class="navi">
+            <ul>
+                <li><a href="exercise1.html">Exercise 1</a></li>
+                <li><a href="exercise2.html">Exercise 2</a></li>
+                <li><a href="exercise3.html">Exercise 3</a></li>
+                <li><a href="exercise4.html">Exercise 4</a></li>
+                <li><a href="exercise5.html">Exercise 5</a></li>
+                <li><a href="exercise6.html">Exercise 6</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="topic_title">
+        <div class="container">
+            <div class="topichead">
+                <h1 class="button">Exercise 6</h1>
+            </div>
+        </div>
+    </div>
+    <div class="exercise-one">
+        <div class="container">
+            <div class="exercise-one_text">
+                <img src="e6.2.png" alt="">
+                <img src="e6.3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <p class="p1">
+        <button><a href="home.html">Home</a></button>
+        <button><a href="exercise5.html">Back</a></button>
+        <button><a href="home.html">Next</a></button>
+    </p>
+    <script>
+        const button = document.querySelector(".button");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            button.classList.add("animate");
+
+            setTimeout(() => {
+                button.classList.remove("animate");
+            },600)
+        });
+    </script>
+    <script>
+        let sub = document.getElementById("sub");
+        function toggle() {
+            sub.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

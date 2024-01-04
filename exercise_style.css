@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+* {
+    font-family: "DM Serif", serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    color: white;
+    margin-bottom: 170px;
+}
+.nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 40px;
+    background: #8dc8ff;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo {
+    width: 200px;
+}
+.user {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.nav ul {
+    width: 100%;
+    text-align: right;
+}
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.navi {
+    margin-top: -720px;
+    position: relative;
+}
+.nav2 {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+.navi ul {
+    width: 100%;
+    text-align: center;
+}
+.navi ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 115px;
+}
+.navi ul li a {
+    color: #0084ff;
+    text-decoration: none;
+}
+.menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 40px;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+.menu-wrap.open-menu {
+    max-height: 400px;
+}
+.sub-menu {
+    background: #8dc8ff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile h3 {
+    font-weight: 500;
+}
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: white;
+    margin: 15px 0 10px;
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 12px 0;
+}
+.menu-link p {
+    width: 100%;
+}
+.menu-link img {
+    width: 40px;
+    margin-right: 15px;
+    padding: 8px;
+    background: white;
+    border-radius: 50%;
+}
+.menu-link span {
+    font-size: 20px;
+}
+.menu-link:hover p {
+    font-weight: 600;
+}
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.nav-topic {
+    width: 100%;
+    text-align: right;
+    margin: 10px;
+}
+.nav-topic a {
+    color: #0084ff;
+    text-decoration: none;
+    margin-left: 40px;
+    gap: 40px;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+b {
+    color: red;
+}
+header .nav2 {
+    align-items: center;
+    margin-left: 40px;
+    gap: 60px;
+    justify-content: center;
+}
+.topic_title {
+    display: flex;
+    height: 200px;
+    margin-top: -700px;
+    justify-content: center;
+}
+.topichead {
+    width: 100%;
+}
+.topichead h1 {
+    text-shadow: 2px 2px #000000;
+    font-size: 4.3rem;
+    color: #0084ff;
+    cursor: pointer;
+}
+.exercise-one {
+    padding: 0 50px;
+    justify-content: left;
+}
+.exercise-one_text {
+    width: 90%;
+}
+.exercise-one_text img {
+    height: auto;
+    width: auto;
+}
+.p1 {
+    text-align: center;
+    word-spacing: 50px;
+    font-size: large;
+}
+button {
+    background: white;
+    border: 2px solid #8dc8ff;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0px 0px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.button:active {
+    transform: scale(0.96);
+}
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 150%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+.button.animate::before {
+    top: -70%;
+    background-image: radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, blue 20%, transparent 30%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, blue 15%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    animation: topBubbles 0.6s ease-in-out infinite;
+}
+@keyframes topBubbles {
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+.button.animate::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, blue 15%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%),
+    radial-gradient(circle, blue 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%, 70% 0%;
+    animation: bottomBubbles 0.6s ease-in-out infinite;
+}
+@keyframes bottomBubbles {
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+    
+}

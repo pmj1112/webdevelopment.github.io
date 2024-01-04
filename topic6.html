@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Equation of a Circle</title>
+    <link rel="stylesheet" href="topics_style.css">
+    <link rel="icon" href="topic.png">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="nav">
+                <img src="logo_icon.png" class="logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="topic1.html">Topics</a></li>
+                    <li><a href="exercise1.html">Exercises</a></li>
+                </ul>
+                
+                <img src="user.png" class="user" onclick="toggle()">
+                <div class="menu-wrap" id="sub">
+                    <div class="sub-menu">
+                        <div class="profile">
+                            <img src="user.png">
+                            <h3>PMJ</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="menu-link">
+                            <img src="user.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="menu-link">
+                            <img src="settings.png">
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="menu-link">
+                            <img src="logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <div class="nav2">
+        <nav class="navi">
+            <ul>
+                <li><a href="topic1.html">Chords, Arcs, and Central Angles</a></li>
+                <li><a href="topic2.html">Arcs and Inscribed Angles</a></li>
+                <li><a href="topic3.html">Tangents and Secants of a Circle</a></li>
+                <li><a href="topic4.html">Tangent and Secant Segments</a></li>
+                <li><a href="topic5.html">The Distance Formula</a></li>
+                <li><a href="topic6.html">The Equation of a Circle</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="topic_title">
+        <div class="container">
+            <div class="topichead">
+                <h1 class="button">The Equation of a Circle</h1>
+            </div>
+        </div>
+    </div>
+    <div class="twenty-four">
+        <h2>The Standard Form of the Equation of a Circle</h2>
+        <div class="container">
+            <div class="twenty-four_text">
+                <img src="standard.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="twenty-five">
+        <h2>The General Equation of a Circle</h2>
+        <div class="container">
+            <div class="twenty-five_text">
+                <img src="general.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="twenty-six">
+        <h2>The General Equation of a Circle</h2>
+        <div class="container">
+            <div class="twenty-six_text">
+                <p>The center and the radius of a circle can be found given the equation. To do this, transform the given equation to its standard form <i>(x &#8722; h)<sup>2</sup> + (y &#8722; k)<sup>2</sup> = r<sup>2</sup></i> if the center of the circle is <i>(h, k)</i>, or <i>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></i> if the center of the circle is the origin. Once the center and the radius of the circle are found, its graph can be shown on the coordinate plane.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <p class="p1">
+        <button><a href="home.html">Home</a></button>
+        <button><a href="topic5.html">Back</a></button>
+        <button><a href="exercise1.html">Next</a></button>
+    </p>
+    <script>
+        let sub = document.getElementById("sub");
+        function toggle() {
+            sub.classList.toggle("open-menu");
+        }
+    </script>
+    <script>
+        const button = document.querySelector(".button");
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            button.classList.add("animate");
+
+            setTimeout(() => {
+                button.classList.remove("animate");
+            },600)
+        });
+    </script>
+</body>
+</html>

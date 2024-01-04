@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="topic.png">
+</head>
+<body>
+    <div class="body">
+        <header>
+            <img class="logo" src="logo_icon.png">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#topics">Topics</a>
+                <a href="#exercises">Exercises</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn" onclick="welcome()">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn" onclick="welcome()">Sign Up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h2 id="about">About</h2>
+        <div class="container">
+            <div class="about-text">
+                <p>Geometry is concerned with the shape of individual objects, spatial relationships among various objects, and the properties of surrounding space.</p>
+            </div>
+            <img src="about.png" alt="">
+        </div>
+    </div>
+    <div class="topic-section">
+        <h2 id="topics">Featured Topics</h2>
+        <div class="container">
+            <div class="topic-list">
+                <div class="topic-item">
+                    <img src="central.png" alt="">
+                    <h3><a href="#">Chords, Arcs, and Central Angles</a></h3>
+                    <p>You will learn to derive inductively the relations among chords, arcs, central angles, and illustrate segments and sectors of circles.</p>
+                </div>
+                <div class="topic-item">
+                    <img src="inscribed.png" alt="">
+                    <h3 class="arcs"><a href="#">Arcs and Inscribed Angles</a></h3>
+                    <p>You will learn to prove theorems and solve problems related to chords, arcs, central angles, and inscribed angles of a circle.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="topic-list">
+                <div class="topic-item">
+                    <img src="tansec.png" alt="">
+                    <h3><a href="#">Tangents and Secants of a Circle</a></h3>
+                    <p>You will learn to illustrate tangents and secants of circles.</p>
+                </div>
+                <div class="topic-item">
+                    <img src="segment.png" alt="">
+                    <h3><a href="#">Tangent and Secant Segments</a></h3>
+                    <p>You will learn to solve problems involving tangents and secants of circles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="topic-list">
+                <div class="topic-item">
+                    <img src="coor.png" alt="">
+                    <h3><a href="#">The Distance Formula, The Midpoint, and The Coordinate Proof</a></h3>
+                    <p>You will learn to graph on the coodinate plane.</p>
+                </div>
+                <div class="topic-item">
+                    <img src="equation.png" alt="">
+                    <h3><a href="#">The Equation of a Circle</a></h3>
+                    <p>You will learn to determine the center and radius of a circle given its equations and vice versa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exercise-section">
+        <h2 id="exercises">Exercises</h2>
+        <div class="container">
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="#">Exercise 1</a></h3>
+                </div>
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="#">Exercise 2</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="#">Exercise 3</a></h3>
+                </div>
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="#">Exercise 4</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="exercise-list">
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="#">Exercise 5</a></h3>
+                </div>
+                <div class="exercise-item">
+                    <img src="exercise.png" alt="">
+                    <h3><a href="#">Exercise 6</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="container">
+            <footer class="foot">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#exercises">Exercises</a></li>
+                </ul>
+              <p>&copy; 2023 PMJ, Inc</p>
+            </footer>
+          </div>
+    </nav>
+
+    <script src="script.js"></script>
+
+    <script>
+        function welcome() {
+            window.open("home.html")
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
