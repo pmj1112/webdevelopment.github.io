@@ -31,7 +31,7 @@
 .logo {
     width: 200px;
 }
-.user {
+.user-pic {
     width: 50px;
     border-radius: 50%;
     cursor: pointer;
@@ -70,7 +70,7 @@
     color: #0084ff;
     text-decoration: none;
 }
-.menu-wrap {
+.sub-menu-wrap {
     position: absolute;
     top: 100%;
     right: 40px;
@@ -79,7 +79,7 @@
     overflow: hidden;
     transition: max-height .5s;
 }
-.menu-wrap.open-menu {
+.sub-menu-wrap.open-menu {
     max-height: 400px;
 }
 .sub-menu {
@@ -88,14 +88,14 @@
     margin: 10px;
     border-radius: 20px;
 }
-.profile {
+.user-profile {
     display: flex;
     align-items: center;
 }
-.profile h3 {
+.user-profile h3 {
     font-weight: 500;
 }
-.profile img {
+.user-profile img {
     width: 50px;
     border-radius: 50%;
     margin-right: 15px;
@@ -107,27 +107,27 @@
     background: white;
     margin: 15px 0 10px;
 }
-.menu-link {
+.sub-menu-link {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: white;
     margin: 12px 0;
 }
-.menu-link p {
+.sub-menu-link p {
     width: 100%;
 }
-.menu-link img {
+.sub-menu-link img {
     width: 40px;
     margin-right: 15px;
     padding: 8px;
     background: white;
     border-radius: 50%;
 }
-.menu-link span {
+.sub-menu-link span {
     font-size: 20px;
 }
-.menu-link:hover p {
+.sub-menu-link:hover p {
     font-weight: 600;
 }
 nav {

@@ -19,31 +19,32 @@
                     <li><a href="exercise1.html">Exercises</a></li>
                 </ul>
                 
-                <img src="user.png" class="user" onclick="toggle()">
-                <div class="menu-wrap" id="sub">
-                    <div class="sub-menu">
-                        <div class="profile">
-                            <img src="user.png">
-                            <h3>PMJ</h3>
-                        </div>
-                        <hr>
-                        <a href="#" class="menu-link">
-                            <img src="user.png">
-                            <p>Edit Profile</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="menu-link">
-                            <img src="settings.png">
-                            <p>Settings</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="menu-link">
-                            <img src="logout.png">
-                            <p>Logout</p>
-                            <span>></span>
-                        </a>
+                <img src="user.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-profile">
+                        <img src="user.png">
+                        <h3>PMJ</h3>
                     </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="user.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="settings.png">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="index.html" class="sub-menu-link">
+                        <img src="logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
                 </div>
+            </div>
             </div>
             <hr>
         </div>
@@ -111,9 +112,9 @@
         <button><a href="topic5.html">Next</a></button>
     </p>
     <script>
-        let sub = document.getElementById("sub");
-        function toggle() {
-            sub.classList.toggle("open-menu");
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
         }
     </script>
     <script>
